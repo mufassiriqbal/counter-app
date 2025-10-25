@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/teamA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Team A"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/AScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/teamA"
+        app:layout_constraintStart_toStartOf="@+id/teamA"
+        app:layout_constraintTop_toBottomOf="@+id/teamA" />
+
+    <Button
+        android:id="@+id/increBtnAteam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="+ Point"
+        app:layout_constraintEnd_toEndOf="@+id/AScore"
+        app:layout_constraintStart_toStartOf="@+id/AScore"
+        app:layout_constraintTop_toBottomOf="@+id/AScore" />
+
+    <Button
+        android:id="@+id/decreBtnAteam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="- Point"
+        app:layout_constraintEnd_toEndOf="@+id/increBtnAteam"
+        app:layout_constraintStart_toStartOf="@+id/increBtnAteam"
+        app:layout_constraintTop_toBottomOf="@+id/increBtnAteam" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+    <TextView
+        android:id="@+id/teamB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team B"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_vertical"
+        app:layout_constraintTop_toTopOf="@+id/teamA" />
+
+    <TextView
+        android:id="@+id/BScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/teamB"
+        app:layout_constraintStart_toStartOf="@+id/teamB"
+        app:layout_constraintTop_toBottomOf="@+id/teamB" />
+
+    <Button
+        android:id="@+id/increBtnBteam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="+ Point"
+        app:layout_constraintEnd_toEndOf="@+id/BScore"
+        app:layout_constraintStart_toStartOf="@+id/BScore"
+        app:layout_constraintTop_toBottomOf="@+id/BScore" />
+
+    <Button
+        android:id="@+id/decreBtnBteam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="- Point"
+        app:layout_constraintEnd_toEndOf="@+id/increBtnBteam"
+        app:layout_constraintStart_toStartOf="@+id/increBtnBteam"
+        app:layout_constraintTop_toBottomOf="@+id/increBtnBteam" />
+
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
