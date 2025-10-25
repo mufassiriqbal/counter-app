@@ -28,9 +28,8 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        // --- ALL YOUR LOGIC GOES BELOW THIS LINE ---
+ 
 
-        // 3. Find the views from the layout and connect them to your variables
         aScoreTextView = findViewById(R.id.AScore)
         bScoreTextView = findViewById(R.id.BScore)
 
