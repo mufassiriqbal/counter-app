@@ -10,11 +10,11 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
 
-    // 1. Declare variables to hold the scores
+    
     private var scoreA = 0
     private var scoreB = 0
 
-    // 2. Declare the View variables
+
     private lateinit var aScoreTextView: TextView
     private lateinit var bScoreTextView: TextView
 
